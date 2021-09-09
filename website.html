@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    
+    <script src="https://kit.fontawesome.com/6bcd03899a.js" crossorigin="anonymous"></script>
+    <style>
+        .img1 {
+            border: 0px solid black;
+            background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        }
+
+        .img2 {
+            background-image: url('C:/Users/sairam/Desktop/Teju/Study/Bootstrap/Images/banner2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        li:hover{
+            background-color: khaki;
+        }
+    </style>
+</head>
+
+<body class="img2">
+    <div class="container-fluid img1">
+        <header>
+            <div class="row mb-5">
+
+                <div class="col-md-3">
+                    <h2>Company logo</h2>
+                </div>
+                <div class="col-md-4">
+                    <ul class="nav nav nav-pills nav-justified">
+                        <li class="nav-item pb-2"><a class="nav-link" href="#"></a>Home</li>
+                        <li class="nav-item"><a class="nav-link" href="#"></a>About Us</li>
+                        <li class="nav-item"><a class="nav-link" href="#"></a>Gallery</li>
+                        <li class="nav-item"><a class="nav-link" href="#"></a>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 p-2"> 
+                   <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                    <div class="col-md-3">
+                        <nav class="navbar navbar-expand-sm">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </nav>
+                    </div>
+                
+        </header>
+    </div>
+    </div>
+    <div class="container pt-5 pb-3">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, et?</p>
+                <div class="row">
+                    <div class="btn-group btn-lg">
+                        <a href="" class="btn btn-warning">Save</a>
+                        <a href="" class="btn btn-info btn-sm">Download</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3 p-3 mr-1 bg-light">
+                <form>
+                    <h5 class="text-center">How much do you need</h5>
+                    <div class="form-group">
+                        <label for="Email">Email ID</label>
+                        <input type="email" id="idEmail" class="form-control">
+                        <br>
+                        <label>Password</label>
+                        <input type="password" class="form-control">
+                        <br>
+                        <button type="submit" class="btn-success" id="btnSubmit" onclick="Checklogin()" >Submit</button>
+                    </div>
+                </form>
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="text-center">Boostrap card class</h3>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">caption</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusantium
+                            soluta id minima et laboriosam consequuntur delectus dolore ipsum unde!</p>
+                            <div class="text-center">
+                            <button class="btn btn-primary mb-3">Read More</button>
+                            </div>
+                        <img src="C:\Users\sairam\Desktop\Teju\Study\Bootstrap\Images\flower.jpg"
+                            class="card-img-top">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="text-center">Boostrap card class</h3>
+                    <div class="card-body">
+
+                        <h4 class="card-title text-center">caption</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusantium
+                            soluta id minima et laboriosam consequuntur delectus dolore ipsum unde!</p>
+                            <div class="text-center">
+                            <button class="btn btn-primary mb-3">Read More</button>
+                            </div>
+                        <img src="C:\Users\sairam\Desktop\Teju\Study\Bootstrap\Images\teddy.jpg"
+                            class="card-img-top">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="text-center">Boostrap card class</h3>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">caption</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem accusantium
+                            soluta id minima et laboriosam consequuntur delectus dolore ipsum unde!</p>
+                        <div class="text-center">
+                            <button class="btn btn-primary mb-3">Read More</button>
+                        </div>
+
+                        <img src="C:\Users\sairam\Desktop\Teju\Study\Bootstrap\Images\grid-img5.jpg"
+                            class="card-img-bottom">
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function Checklogin(){
+        debugger;
+        var _email= $('#idEmail').val();
+        if(_email==null||_email==""){
+            alert('Please Enter EmailId!!');
+        }
+        alert('Login Done!')
+    }
+</script>
+</html>
+
